@@ -32,7 +32,6 @@ jobs:
         run: |
           echo "DATABASE_URL=${{ secrets.DATABASE_URL }}" >> .env.production
           echo "NEXTAUTH_SECRET=${{ secrets.NEXTAUTH_SECRET }}" >> .env.production
-          echo "NEXTAUTH_URL=${{ secrets.NEXTAUTH_URL }}" >> .env.production
 
       - name: Build Next.js App
         run: npm run build
