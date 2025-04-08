@@ -52,6 +52,9 @@ jobs:
     needs: build
     environment:
       name: 'Production'
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
       - name: Download artifact
